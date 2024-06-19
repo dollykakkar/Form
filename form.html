@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <p class="p1"><b>-:Validation Form:-</b></p>
+    <div id="main">
+        <form action="" onsubmit="return validform()">
+<!-- USERNAME  -->
+            <label><b>User Name</b></label>
+            <input type="text" placeholder="enter your Uaer name" class="user" id="username">
+            <p id="uerr"></p>
+            <p><b>Required :<br> Contain Atleast 10 character<br> 
+            Contain Atleast 3 digit<br>
+            Contain Atleast one special character(@,$,*,!)</b></p>
+
+<!-- E_MAIL -->
+            <label><b>E-mail</b></label><br>
+            <input type="email" placeholder="enter your E-mail"class="mail" id="email">
+            <p id="eerr"></p>
+
+<!-- MOBILE NUMBER -->
+            <label><b>Mobile number</b></label><br>
+            <input type="number" placeholder="enter your mobile number"class="mobile" id="mobile">
+            <p id="merr"></p>
+
+<!-- PASSWORD -->
+            <label><b>Password</b></label><br>
+            <input type="text" placeholder="enter your Password"class="pass" id="pass">
+            <p id="perr"></p>
+            <p><b>Required :<br> Contain Atleast 10 character<br> 
+            Contain Atleast 3 digit<br>
+            Contain Atleast one special character</b></p>
+
+<!-- CONFIRM PASSWORD -->
+            <label><b>Confirm Password</b></label><br>
+            <input type="text" placeholder="Re-enter Password"class="cnfrm" id="Confirm">
+            <p id="cerr"></p>
+
+<!-- SUBMIT BTN -->
+            <input type="submit" id="btn">
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>>
